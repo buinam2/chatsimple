@@ -7,6 +7,26 @@
 
 
 
+      <script id="magicblocks-chatbot-script" type="text/javascript">
+        window.MAGICBLOCKS = {
+          workspace: 'ws_iIjvUernAjyDSp3',
+          experience: 'e_21i26au53qV0gjC',
+          config: {
+            style: 'dynamic'
+          }
+        };
+
+        (function () {
+          var queryPath = '?ws=' + window.MAGICBLOCKS.workspace + '&e=' + window.MAGICBLOCKS.experience;
+          var h = document.getElementsByTagName('body')[0];
+          var s = document.createElement('script');
+          s.id = 'mbw-script';
+          s.type = 'text/javascript';
+          s.src = 'https://scripts.develop.magicblocks.dev/widget/1.0.0' + queryPath;
+          h.appendChild(s);
+        })();
+      </script>
+    
 </body>
 </html>
 
