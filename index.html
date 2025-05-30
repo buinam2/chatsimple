@@ -4,24 +4,24 @@
 <title>ChatSimpleTest</title>
 </head>
 <body>
-    <script id="magicblocks-chatbot-script" type="text/javascript">
+   <script id="magicblocks-chatbot-script">
     window.MAGICBLOCKS = {
-      workspace: 'ws_C2uzccz1md_FTir',
-      experience: 'e_D9oXRqAMS6xk8pf',
+      workspace: 'ws_UuOeorBeCh44br',
+      experience: 'e_LGSM6gnkRRlgcUA',
       config: {
         style: 'dynamic'
       }
     };
 
-    (function () {
+    document.addEventListener("DOMContentLoaded", function () {
       var queryPath = '?ws=' + window.MAGICBLOCKS.workspace + '&e=' + window.MAGICBLOCKS.experience;
       var h = document.getElementsByTagName('body')[0];
       var s = document.createElement('script');
       s.id = 'mbw-script';
       s.type = 'text/javascript';
-      s.src = 'https://scripts.develop.magicblocks.dev/widget/1.0.0' + queryPath;
+      s.src = 'https://scripts.magicblocks.dev/widget/1.0.0' + queryPath;
       h.appendChild(s);
-    })();
+    });
   </script>
 </body>
 </html>
